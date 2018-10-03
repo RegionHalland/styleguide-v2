@@ -1,24 +1,26 @@
-const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 
 module.exports = {
-	entry: './src/css/main.css',
-	mode: process.env.NODE_ENV,
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            'postcss-loader',
-          ],
+    entry: {
+        "styles": ["./src/css/main.css"]
+    },
+    module: {
+    	rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader'
+                ]
+            }
+        ]
+    },
+    plugins: [
+        new FixStyleOnlyEntriesPlugin(),
+        new MiniCssExtractPlugin({
+            filename: "main.min.css",
         }),
-      },
     ],
-  },
-	plugins: [
-	    new ExtractTextPlugin('main.min.css'),
-	]
-}
+};
