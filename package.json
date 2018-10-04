@@ -7,7 +7,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack --watch",
     "serve": "node server.js",
-    "build": "cross-env NODE_ENV=production webpack --no-progress"
+    "build": "cross-env NODE_ENV=production webpack --no-progress",
+    "deploy": "./deploy.sh"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
