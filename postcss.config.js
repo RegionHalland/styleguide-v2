@@ -1,6 +1,8 @@
 module.exports = (ctx) => ({
 	plugins: {
-		'tailwindcss': { 'option': './tailwind.config.js' },
+		'tailwindcss': { 
+			config: './tailwind.config.js' 
+		},
 		'cssnano': ctx.env === 'production' ? {
 			preset: 'default',
 			discardComments: false
