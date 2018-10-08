@@ -5,9 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack --watch",
+    "start": "cross-env NODE_ENV=development webpack --watch --config webpack.dev.js",
     "serve": "node server.js",
-    "build": "cross-env NODE_ENV=production webpack --no-progress",
+    "build": "cross-env NODE_ENV=production webpack --no-progress --config webpack.prod.js",
     "publish": "./publish.sh"
   },
   "devDependencies": {
@@ -31,6 +31,7 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
-    "webpack-fix-style-only-entries": "^0.0.4"
+    "webpack-fix-style-only-entries": "^0.0.4",
+    "webpack-merge": "^4.1.4"
   }
 }

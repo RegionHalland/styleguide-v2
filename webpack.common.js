@@ -9,20 +9,18 @@ module.exports = {
 		styles: './src/scss/main.scss',
     	icons: glob('./src/icons/*.svg')
   	},
-  	devtool: 'source-map',
 	output: {
     	path: path.resolve(__dirname, 'dist')
   	},
-	mode: process.env.NODE_ENV,
 	module: {
-    	rules: [
-    	{
+		rules: [
+		{
 			test: /\.scss$/,
 			use: [
 				MiniCssExtractPlugin.loader,
-				{ loader: 'css-loader', options: { sourceMap: process.env.NODE_ENV === "development" } },
-				{ loader: 'postcss-loader', options: { sourceMap: process.env.NODE_ENV === "development" } },
-				{ loader: 'sass-loader', options: { sourceMap: process.env.NODE_ENV === "development" } }
+				{ loader: 'css-loader' },
+				{ loader: 'postcss-loader' },
+				{ loader: 'sass-loader' }
 			]
 		},
 		{
