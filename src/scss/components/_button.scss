@@ -1,0 +1,10 @@
+.button {
+	@apply p-6 bg-grey-light rounded;
+}
+
+.button-blue {
+	@apply bg-blue text-white;
+	&:hover {
+		@apply bg-blue-dark;
+	}
+}
