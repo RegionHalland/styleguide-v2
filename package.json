@@ -8,7 +8,7 @@
     "start": "cross-env NODE_ENV=development webpack --watch --config webpack.dev.js",
     "serve": "node server.js",
     "build": "cross-env NODE_ENV=production webpack --no-progress --config webpack.prod.js",
-    "publish": "./publish.sh"
+    "release": "./build/release.sh"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",

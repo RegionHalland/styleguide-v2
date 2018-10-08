@@ -16,7 +16,7 @@ npm run-script build
 
 echo "Creating git tag v$VERSION..."
 
-git add dist/main.css -f
+git add dist/ -f
 
 git commit -m "v$VERSION"
 
