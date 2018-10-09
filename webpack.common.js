@@ -5,6 +5,7 @@ const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
+	mode: 'none',
 	entry: {
 		styles: './src/scss/main.scss',
     	icons: glob('./src/icons/*.svg')
