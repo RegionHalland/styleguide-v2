@@ -8,7 +8,8 @@
     "start": "cross-env NODE_ENV=development webpack --watch --config webpack.dev.js",
     "serve": "node server.js",
     "build": "cross-env NODE_ENV=production webpack --no-progress --config webpack.prod.js",
-    "release": "./build/release.sh"
+    "release": "./build/release.sh",
+    "test": "mocha-webpack --webpack-config webpack.common.js"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
@@ -19,6 +20,8 @@
     "glob": "^7.1.3",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.3",
+    "mocha": "^5.2.0",
+    "mocha-webpack": "^1.1.0",
     "node-sass": "^4.9.3",
     "postcss": "^7.0.5",
     "postcss-loader": "^3.0.0",
