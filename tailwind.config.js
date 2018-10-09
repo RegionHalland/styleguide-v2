@@ -144,6 +144,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      // TODO: Use the name of the typekit provided font.
       'Scala-Sans', 
       '-apple-system', 
       'BlinkMacSystemFont', 
