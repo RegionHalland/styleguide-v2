@@ -1,0 +1,69 @@
+.article {
+
+	h1, h2, h3, h4, h5, h6 {
+		@apply leading-tight;
+	}
+
+	// h1 {
+	// 	margin-top: 0;
+	// }
+
+	// a {
+	// 	word-wrap: break-word;
+	// 	text-decoration: underline;
+
+	// 	&:visited {
+	// 		color: $link-visited;
+	// 	}
+	// }
+
+	ul, ol, p, figure, blockquote {
+		@apply mt-4 mb-4;
+	}
+
+	// ul, ol {
+	// 	margin-left: $space-4;
+	// }
+
+	// ul {
+	// 	list-style-type: disc;
+	// }
+
+	// ol {
+	// 	list-style-type: decimal;
+	// }
+
+	// figure,
+	// figcaption {
+	// 	max-width: 100%;
+	// }
+
+	// figure {
+	// 	text-align: center;
+
+	// 	&.alignright {
+	// 		float: right;
+	// 		margin: $space-2 0 $space-2 $space-2;
+	// 	}
+
+	// 	&.alignleft {
+	// 		float: left;
+	// 		margin: $space-2 $space-2 $space-2 0;
+	// 	}
+	// }
+
+	// figcaption {
+	// 	margin-top: $space-2;
+	// 	text-align: left;
+	// }
+
+	// .alignleft {
+	// 	float: left;
+	// 	margin-right: $space-2;
+	// }
+
+	// .alignright {
+	// 	float: right;
+	// 	margin-left: $space-2;
+	// }
+}
