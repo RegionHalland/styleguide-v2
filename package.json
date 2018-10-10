@@ -6,7 +6,7 @@
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-  }
+  },
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack --watch --config webpack.dev.js",
     "serve": "node server.js",
