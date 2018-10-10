@@ -4,12 +4,6 @@
 /**
  * Add components here, before @tailwind utilities
  */
-@import 'components/_article';
 @import 'components/_button';
 
-body {
-	@apply font-sans;
-}
-
 @tailwind utilities;
-
