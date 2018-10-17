@@ -1,6 +1,6 @@
 {
   "name": "@regionhalland/styleguide-v2",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Region Halland Styleguide v2",
   "main": "index.js",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "test": "mocha-webpack --webpack-config webpack.common.js"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
+    "autoprefixer": "^9.2.1",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "cssnano": "^4.1.4",
@@ -25,7 +25,7 @@
     "mini-css-extract-plugin": "^0.4.4",
     "mocha": "^5.2.0",
     "mocha-webpack": "^1.1.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.9.4",
     "postcss": "^7.0.5",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
