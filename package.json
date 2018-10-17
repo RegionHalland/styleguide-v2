@@ -39,5 +39,8 @@
     "webpack-dev-server": "^3.1.9",
     "webpack-fix-style-only-entries": "^0.0.4",
     "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "tailwindcss-flexbox-order": "^1.0.0"
   }
 }

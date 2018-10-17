@@ -856,6 +856,7 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
+    require('tailwindcss-flexbox-order')()
   ],
 
 
