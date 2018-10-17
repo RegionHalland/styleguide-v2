@@ -1,9 +1,16 @@
 @tailwind preflight;
+
+// TODO: Where should base styles like font-family live?
+body {
+	@apply font-sans;
+}
+
 @tailwind components;
 
 /**
  * Add components here, before @tailwind utilities
  */
 @import 'components/_button';
+@import 'components/_article';
 
 @tailwind utilities;
