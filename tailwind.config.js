@@ -57,24 +57,23 @@ let colors = {
   'grey-lighter': '#E4E4E4',
   'grey-lightest': '#F4F4F4',
 
-
-  'red-dark': '#C82828',
-  'red': '#F53131',
-  'red-light': '#FCC8C8',
+  'red-dark': '#700B1B',
+  'red': '#700B1B',
+  'red-light': '#E3B7BE',
 
   'orange-dark': '#D5A532',
   'orange': '#FDB813',
   'orange-light': '#FFF1CE',
 
-  'yellow-dark': '#f2d024',
-  'yellow': '#ffed4a',
-  'yellow-light': '#fff382',
+  'yellow-dark': '#B07A0F',
+  'yellow': '#FCAF15',
+  'yellow-light': '#FEE7B9',
 
-  'green-dark': '#396317',
-  'green': '#438011',
-  'green-light': '#D2E1C6',
+  'green-dark': '#266122',
+  'green': '#378A30',
+  'green-light': '#C3DCC1',
 
-  'blue-dark': '#0E5AA4',
+  'blue-dark': '#004890',
   'blue': '#6CA2D5',
   'blue-light': '#CEE2F2',
 }
