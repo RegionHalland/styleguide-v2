@@ -13,7 +13,7 @@
 	}
 
 	ul, ol, p, figure, blockquote {
-		@apply mt-3 mb-3;
+		@apply mt-3 mb-3 leading-tight;
 	}
 
 	ul, ol {
@@ -56,4 +56,32 @@
 	.alignright {
 		@apply float-right ml-2;
 	}
+
+	// Tables should be wrapped in a container
+	.table-container {
+		@apply w-full overflow-x-auto;
+	}
+
+	table {
+		@apply border;
+		// Workaround for border-collapse bug.
+		// https://stackoverflow.com/questions/25591499/chrome-bug-with-colspan-and-border
+		// box-shadow: 1px 0 0 0 palette(grey, light);
+	}
+
+	thead {
+		@apply bg-blue-dark text-white uppercase;
+	}
+
+	td, th {
+		@apply py-1 px-2;
+	}
+
+	tbody tr:nth-child(even) {
+		@apply bg-grey-lighter;
+	}
+
+ 	tbody + tfoot {
+ 		@apply border-t;
+ 	}
 }
