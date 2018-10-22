@@ -9,11 +9,11 @@
 	}
 
 	a {
-		@apply break-words underline
+		@apply break-words underline text-blue-dark;
 	}
 
 	ul, ol, p, figure, blockquote {
-		@apply mt-3 mb-3 leading-tight;
+		@apply mt-3 mb-4 text-lg leading-normal;
 	}
 
 	ul, ol {
@@ -26,6 +26,10 @@
 
 	ol {
 		list-style-type: decimal;
+	}
+
+	li {
+		@apply mb-2;
 	}
 
 	figure,
