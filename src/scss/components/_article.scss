@@ -63,26 +63,25 @@
 
 	// Tables should be wrapped in a container
 	.table-container {
-		@apply w-full overflow-x-auto;
+		@apply w-full overflow-x-auto rounded border border-grey-lightest;
 	}
 
 	table {
-		@apply border;
 		// Workaround for border-collapse bug.
 		// https://stackoverflow.com/questions/25591499/chrome-bug-with-colspan-and-border
 		// box-shadow: 1px 0 0 0 palette(grey, light);
 	}
 
 	thead {
-		@apply bg-blue-dark text-white uppercase;
+		@apply bg-green-light text-black sticky pin-t;
 	}
 
 	td, th {
-		@apply py-1 px-2;
+		@apply py-2 px-2 whitespace-no-wrap;
 	}
 
 	tbody tr:nth-child(even) {
-		@apply bg-grey-lighter;
+		@apply bg-grey-lightest;
 	}
 
  	tbody + tfoot {
