@@ -25,6 +25,7 @@ View the full documentation at https://tailwindcss.com.
 */
 
 // let defaultConfig = require('tailwindcss/defaultConfig')()
+const _ = require('lodash')
 
 
 /*
@@ -855,7 +856,44 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
-    require('tailwindcss-flexbox-order')()
+    require('tailwindcss-flexbox-order')(),
+    // Pin Classes
+    // function({ addUtilities, addComponents, e, prefix, config }) {
+    //   const directions = {
+    //     't': 'top',
+    //     'b': 'bottom',
+    //     'l': 'left',
+    //     'r': 'right'
+    //   }
+
+    //   const numbers = {
+    //     '1': '0.25rem',
+    //     '2': '0.5rem',
+    //     '3': '0.75rem',
+    //     '4': '1rem',
+    //     '5': '1.25rem',
+    //     '6': '1.5rem',
+    //     '8': '2rem',
+    //   }
+
+
+    //   const rotateUtilities = _.map(directions, (value, key) => {
+        
+    //     const something = _.map(numbers, (number, numbersKey) => {
+    //       return {
+    //         [`.${e(`pin-${key}-${numbersKey}`)}`]: {
+    //           [value]: numbersKey
+    //         }
+    //       }
+    //     })
+
+    //     return something;
+
+    //   })
+
+    //   console.log(rotateUtilities)
+    //   addUtilities(rotateUtilities, ['responsive'])
+    // },
   ],
 
 
