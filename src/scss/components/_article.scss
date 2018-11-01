@@ -10,6 +10,10 @@
 
 	a {
 		@apply break-words underline text-blue-dark;
+
+		&:hover {
+			opacity:0.75;
+		}
 	}
 
 	ul, ol, p, figure, blockquote {
