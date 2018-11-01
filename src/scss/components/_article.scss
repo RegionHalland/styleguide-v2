@@ -70,10 +70,37 @@
 		// Workaround for border-collapse bug.
 		// https://stackoverflow.com/questions/25591499/chrome-bug-with-colspan-and-border
 		// box-shadow: 1px 0 0 0 palette(grey, light);
+
+		@apply w-full;
 	}
 
 	thead {
 		@apply bg-green-light text-black sticky pin-t;
+
+		// Sorting arrows
+		
+		td[role=columnheader]:not(.no-sort) {
+			@apply cursor-pointer font-bold;
+		}
+
+		td[role=columnheader]:not(.no-sort)::after {
+			content: '';
+			border-color: rgba(0,0,0,0.5) transparent;
+
+			@apply border-l-4 border-r-4 border-b-4 float-right mt-2 border-solid invisible opacity-0 select-none;
+		}
+
+		td[aria-sort=ascending]:not(.no-sort)::after {
+			@apply border-l-4 border-r-4 border-t-4 border-b-0
+		}
+
+		td[aria-sort]:not(.no-sort)::after {
+			@apply visible opacity-50;
+		}
+
+		td[role=columnheader]:not(.no-sort):hover::after {
+			@apply opacity-100 visible;
+		}
 	}
 
 	td, th {
