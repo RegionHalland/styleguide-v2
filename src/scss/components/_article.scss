@@ -9,10 +9,14 @@
 	}
 
 	a {
-		@apply break-words underline text-blue-dark;
+		@apply break-words underline;
 
 		&:hover {
-			opacity:0.75;
+			@apply bg-yellow-light;
+		}
+
+		&:focus {
+			@apply bg-yellow-light;
 		}
 	}
 
