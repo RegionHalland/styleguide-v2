@@ -1,0 +1,30 @@
+.tabs {
+	@apply list-reset inline-flex rounded-tl rounded-tr overflow-scroll w-full whitespace-no-wrap;
+	@screen md {
+		@apply w-auto;
+	}
+}
+
+.tab {
+	@apply bg-white text-black no-underline whitespace-no-wrap;
+	&:hover {
+		@apply bg-grey-lightest;
+	}
+	&--active {
+		.tab__item {
+			@apply border-yellow;
+		}
+		.tab__counter {
+			@apply bg-yellow;
+		}
+	}
+}
+
+.tab__item {
+	@apply text-lg border-t-4 border-grey h-16 flex items-center px-4;
+}
+
+
+.tab__counter {
+	@apply bg-grey px-2 h-6 ml-2 inline-flex items-center text-sm justify-center rounded-full;
+}
