@@ -6,11 +6,12 @@
 }
 
 .tab {
-	@apply bg-white text-black no-underline whitespace-no-wrap;
+	@apply bg-grey-lightest text-black no-underline whitespace-no-wrap;
 	&:hover {
 		@apply bg-grey-lightest;
 	}
 	&--active {
+		@apply bg-white;
 		.tab__item {
 			@apply border-yellow;
 		}
