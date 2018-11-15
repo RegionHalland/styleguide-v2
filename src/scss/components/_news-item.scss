@@ -1,0 +1,29 @@
+.news-item {
+	
+}
+
+.news-item__link {
+	@apply text-blue-dark mb-1 inline-block;
+}
+
+.news-item__title {
+	@appky text-xl leading-tight;
+	@screen sm {
+		@apply text-2xl;
+	}
+}
+
+.news-item__date {
+	@apply text-base block text-grey-dark mb-3;
+}
+
+.news-item__excerpt {
+	@apply text-lg text-grey-darkest leading-tight mb-3;
+}
+
+.news-item__tag {
+	@apply px-2 mr-2 mb-2 py-1 text-sm no-underline text-black bg-blue-light rounded-full inline-block;
+	&:hover {
+		@apply underline;
+	}
+}
