@@ -1,7 +1,10 @@
 .button {
-	@apply inline-flex no-underline text-white bg-blue-dark px-5 mt-4 items-center py-3 text-lg rounded;
+	@apply no-underline text-white bg-blue-dark px-5 py-3 text-lg rounded;
 }
 
 .button-outline {
-	@apply inline-flex no-underline text-blue-dark bg-transparent border border-blue-dark px-5 mt-4 items-center py-3 text-lg rounded;
+	@apply inline-flex no-underline text-blue-dark bg-transparent border border-blue-dark px-5 items-center py-3 text-lg rounded;
+	&:hover {
+		@apply bg-blue-light;
+	}
 }
