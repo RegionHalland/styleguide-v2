@@ -1,10 +1,7 @@
 .button {
-	@apply p-6 bg-grey-light rounded;
+	@apply inline-flex no-underline text-white bg-blue-dark px-5 mt-4 items-center py-3 text-lg rounded;
 }
 
-.button-blue {
-	@apply bg-blue text-white;
-	&:hover {
-		@apply bg-blue-dark;
-	}
+.button-outline {
+	@apply inline-flex no-underline text-blue-dark bg-transparent border border-blue-dark px-5 mt-4 items-center py-3 text-lg rounded;
 }
