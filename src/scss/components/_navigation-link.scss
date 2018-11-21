@@ -1,0 +1,24 @@
+.navigation-link {
+}
+
+.navigation-link__link {
+	@apply text-2xl flex font-bold text-blue-dark leading-tight mb-3 mr-2;
+	flex:2;
+}
+
+.navigation-link__upper {
+	@apply flex items-start justify-between;
+}
+
+
+.navigation-link__icon {
+	@apply h-6 w-6 rounded-full bg-blue-light inline-block mt-1;
+}
+
+.navigation-link__list {
+	
+}
+
+.navigation-link__list-item {
+	@apply text-lg;
+}

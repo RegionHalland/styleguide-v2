@@ -10,8 +10,10 @@ body {
 /**
  * Add components here, before @tailwind utilities
  */
+
 @import 'components/_button';
 @import 'components/_tabs';
 @import 'components/_article';
+@import 'components/_navigation-link';
 
 @tailwind utilities;
