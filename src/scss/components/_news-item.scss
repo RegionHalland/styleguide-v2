@@ -7,7 +7,7 @@
 }
 
 .news-item__title {
-	@appky text-xl leading-tight;
+	@apply text-xl leading-tight;
 	@screen sm {
 		@apply text-2xl;
 	}
